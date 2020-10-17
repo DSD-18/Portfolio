@@ -50,14 +50,17 @@ p {
 
 .menu {
     list-style: none;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: fixed;
+    top: 0px;
     cursor: pointer;
     z-index: 10;
+    width: 100%;
+    background: white;
+    margin-top: 0px;
 }
-.limks{
-    float: left;
+
+.links {
+    display: inline;
     padding-top: 5px;
     padding-left: 9px;
     padding-right: 9px;
@@ -65,6 +68,31 @@ p {
     font-size: 20px;
     font-family: fantasy;
 }
-.links:hover{
+
+.links:hover {
     background-color: chartreuse;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 2px 2px gainsboro;
+}
+
+#writings a {
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+#contact {
+    background: firebrick;
+}
+
+.contact1 h3 {
+    display: inline;
+}
+.contact1 a {
+    text-shadow: none;
+    color: white;
 }
